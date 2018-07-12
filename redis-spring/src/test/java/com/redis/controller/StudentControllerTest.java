@@ -38,7 +38,7 @@ public class StudentControllerTest {
 	public void contextLoads() throws Exception {
 		System.out.println("3333");
 		//RequestBuilder request = get("redis-spring/rest/select").param("id", "2");
-		RequestBuilder request = get("/select").param("id", "2");
+		RequestBuilder request = get("/select").param("id", "3");
 		mvc.perform(request).andExpect(status().isOk())
 				.andExpect(content().string("{\"id\":\"2\",\"name\":\"b\",\"age\":\"10\",\"sex\":\"0\"}"));
 	}
